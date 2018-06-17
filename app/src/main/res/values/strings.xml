@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OrderFood</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+</resources>
