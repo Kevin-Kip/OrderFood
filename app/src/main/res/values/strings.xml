@@ -2,4 +2,8 @@
     <string name="app_name">OrderFood</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="login">Login</string>
+    <string name="new_">New</string>
+    <string name="hot">Hot</string>
+    <string name="nairobi">Nairobi</string>
+    <string name="search">Search</string>
 </resources>
