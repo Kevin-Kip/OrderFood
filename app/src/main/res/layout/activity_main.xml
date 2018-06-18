@@ -60,7 +60,7 @@
         android:text="@string/new_"
         android:textStyle="bold"
         android:textColor="@color/colorRedBackground"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:id="@+id/new_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
@@ -72,7 +72,7 @@
         android:text="@string/hot"
         android:textStyle="bold"
         android:textColor="@android:color/darker_gray"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:id="@+id/hot_text"
         app:layout_constraintStart_toEndOf="@id/new_text"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/location_text"
         android:text="@string/nairobi"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@android:color/darker_gray"
         android:padding="10dp"
@@ -102,9 +102,247 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/new_text"
-        android:background="@color/colorPrimaryDark">
+        android:background="@android:color/transparent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="180dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/colorRedBackground">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Bucket of Chicken Drumsticks"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Chinese"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100dp"
+                        android:text="@string/view"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/white_button_background"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_orders"
+                    android:text="@string/new_orders"
+                    android:padding="20dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:padding="20dp"
+                    android:text="More"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorRedBackground"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/colorRedBackground">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:background="@drawable/white_text_background"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Mexican"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@android:color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="16sp"
+                        android:text="$10.00"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fried Rice"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/bottom_panel"
+                        android:background="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="3.5"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="120dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:text="@string/add"
+                            android:textAllCaps="false"
+                            android:drawableStart="@drawable/shopping_cart"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:background="@drawable/button_background"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popular_food"
+                    android:text="Popular Food"
+                    android:padding="20dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:padding="20dp"
+                    android:text="More"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorRedBackground"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="180dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/colorRedBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Bucket of Chicken Drumsticks"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Chinese"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="100dp"
+                        android:text="@string/view"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/white_button_background"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            
+        </LinearLayout>
 
     </ScrollView>
 
