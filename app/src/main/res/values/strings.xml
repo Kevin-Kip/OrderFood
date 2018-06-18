@@ -13,4 +13,15 @@
     <string name="buy">Buy</string>
     <string name="free_delivery_within_30_min">Free delivery within 30 min</string>
     <string name="related_foods">Related Foods</string>
+    <string name="select">Select</string>
+    <string name="address">Address</string>
+    <string name="delivery">Delivery</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="confirm_delivery">Confirm Delivery</string>
+    <string name="juice_with_real_pulp">Juice with real pulp</string>
+    <string name="pure_mango_juice">Pure Mango Juice</string>
+    <string name="juice_number">Juice</string>
+    <string name="booking">Booking</string>
 </resources>
