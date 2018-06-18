@@ -31,4 +31,9 @@
     <string name="pay">Pay</string>
     <string name="_548_ongata_rongai">548 Ongata Rongai</string>
     <string name="_256_moi_avenue">256 Moi Avenue</string>
+    <string name="choose_your_payment_method">Choose your payment method</string>
+    <string name="android_pay">Andrid Pay</string>
+    <string name="use_google_id">Use Google ID</string>
+    <string name="credit_debit_card">Credit/Debit card</string>
+    <string name="credit_card">Credit Card</string>
 </resources>
