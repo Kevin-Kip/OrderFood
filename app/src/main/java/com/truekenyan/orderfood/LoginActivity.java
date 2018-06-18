@@ -41,9 +41,10 @@ public class LoginActivity extends AppCompatActivity {
     public void onViewClicked (View view) {
         switch (view.getId()) {
             case R.id.forgot_password:
+//                TODO add code for this
                 break;
             case R.id.login_button:
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));//TODO validate
                 break;
         }
     }
