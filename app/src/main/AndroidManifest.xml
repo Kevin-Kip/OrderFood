@@ -17,7 +17,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".InfoActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BookingActivity"
+            android:parentActivityName=".InfoActivity"/>
+        <activity android:name=".ConfirmationActivity" />
+        <activity android:name=".AddActivity"
+            android:parentActivityName=".ConfirmationActivity"/>
+        <activity android:name=".SuccessActivity"
+            android:parentActivityName=".AddActivity"/>
     </application>
 
 </manifest>
