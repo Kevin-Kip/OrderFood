@@ -24,4 +24,11 @@
     <string name="pure_mango_juice">Pure Mango Juice</string>
     <string name="juice_number">Juice</string>
     <string name="booking">Booking</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="payment">Payment</string>
+    <string name="home">Home</string>
+    <string name="work">Work</string>
+    <string name="pay">Pay</string>
+    <string name="_548_ongata_rongai">548 Ongata Rongai</string>
+    <string name="_256_moi_avenue">256 Moi Avenue</string>
 </resources>
