@@ -6,19 +6,11 @@ Android app UI design.
 Largely used `ConstarintLayout`
 
 ## Look and feel
-![screenshot1](screenshots/screenshot1.png | width=100)
-
-![screenshot2](screenshots/screenshot2.png)
-
-![screenshot3](screenshots/screenshot3.png)
-
-![screenshot4](screenshots/screenshot4.png)
-
-![screenshot5](screenshots/screenshot5.png)
-
-![screenshot6](screenshots/screenshot6.png)
-
-![screenshot7](screenshots/screenshot7.png)
+ <img src="/screenshots/screenshot1.png" width="250px"/> | <img src="/screenshots/screenshot2.png" width="250px"/> | <img src="/screenshots/screenshot3.png" width="250px"/>
+ 
+  <img src="/screenshots/screenshot4.png" width="250px"/> <img src="/screenshots/screenshot5.png" width="250px"/> <img src="/screenshots/screenshot6.png" width="250px"/>
+  
+   <img src="/screenshots/screenshot7.png" width="250px"/> 
 
 ## Coming Soon ...
 >Animation updates coming soon :smiley:
