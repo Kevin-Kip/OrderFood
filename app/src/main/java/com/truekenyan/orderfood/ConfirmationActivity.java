@@ -38,7 +38,7 @@ public class ConfirmationActivity extends AppCompatActivity {
     @OnClick (R.id.button_pay)
     public void onViewClicked () {
         if (addressSelected) {
-            startActivity(new Intent(getApplicationContext(), AddActivity.class));
+            startActivity(new Intent(getApplicationContext(), PaymentActivity.class));
         } else {
             Toast.makeText(getApplicationContext(), "Please select an address", Toast.LENGTH_SHORT).show();
         }

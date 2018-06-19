@@ -30,12 +30,12 @@
         <activity android:name=".ConfirmationActivity"
             android:screenOrientation="portrait"
             android:parentActivityName=".BookingActivity"/>
-        <activity android:name=".AddActivity"
+        <activity android:name=".PaymentActivity"
             android:screenOrientation="portrait"
             android:parentActivityName=".ConfirmationActivity"/>
         <activity android:name=".SuccessActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".AddActivity"/>
+            android:parentActivityName=".PaymentActivity"/>
     </application>
 
 </manifest>
