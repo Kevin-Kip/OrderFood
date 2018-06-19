@@ -1,8 +1,12 @@
 package com.truekenyan.orderfood;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -25,5 +29,6 @@ public class SuccessActivity extends AppCompatActivity {
     @OnClick (R.id.button_done)
     public void onViewClicked () {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }
 }

@@ -1,10 +1,15 @@
 package com.truekenyan.orderfood;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -42,7 +47,8 @@ public class PaymentActivity extends AppCompatActivity {
     public void onViewClicked (View view) {
         switch (view.getId()) {
             case R.id.android_pay:
-                paymentMethodSelected = true;
+                Toast.makeText(getApplicationContext(), "Coming soon. Proceed with credit card", Toast.LENGTH_SHORT).show();
+                paymentMethodSelected = false;
                 break;
             case R.id.credit_pay:
                 paymentMethodSelected = true;
