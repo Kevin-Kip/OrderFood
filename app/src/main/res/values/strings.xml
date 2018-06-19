@@ -42,4 +42,6 @@
     <string name="ccv">CCV</string>
     <string name="card_number">Card number</string>
     <string name="_10_00">$10.00</string>
+    <string name="done">Done</string>
+    <string name="your_order_has_been_placed_succeesfuly">Your order has been placed successfully.</string>
 </resources>
