@@ -31,6 +31,8 @@ public class BookingActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
+        assert getSupportActionBar() != null;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         juiceAmount.setText(String.format(Locale.getDefault(),"%d %s", juiceNumber, getResources().getString(R.string.juice_number)));
     }
