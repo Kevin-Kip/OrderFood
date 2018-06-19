@@ -14,8 +14,6 @@ public class SuccessActivity extends AppCompatActivity {
 
     @BindView (R.id.check_mark)
     ImageView checkMark;
-    @BindView (R.id.button_done)
-    Button buttonDone;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {

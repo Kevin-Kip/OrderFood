@@ -2,9 +2,12 @@ package com.truekenyan.orderfood;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +23,8 @@ public class BookingActivity extends AppCompatActivity {
     Toolbar toolbar;
     @BindView (R.id.juice_amount)
     TextView juiceAmount;
+    @BindView (R.id.order_card)
+    ConstraintLayout orderCard;
 
     private int juiceNumber = 1;
 
@@ -34,14 +39,17 @@ public class BookingActivity extends AppCompatActivity {
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        juiceAmount.setText(String.format(Locale.getDefault(),"%d %s", juiceNumber, getResources().getString(R.string.juice_number)));
+        Animation flipCard = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.order_card_animation);
+        orderCard.setAnimation(flipCard);
+
+        juiceAmount.setText(String.format(Locale.getDefault(), "%d %s", juiceNumber, getResources().getString(R.string.juice_number)));
     }
 
     @OnClick ({R.id.reduce_juice, R.id.increase_juice, R.id.button_confirm_delivery})
     public void onViewClicked (View view) {
         switch (view.getId()) {
             case R.id.reduce_juice:
-                if ((juiceNumber > 1)){
+                if ((juiceNumber > 1)) {
                     juiceNumber -= 1;
                     setJuiceNumber(juiceNumber);
                 } else {
@@ -59,8 +67,8 @@ public class BookingActivity extends AppCompatActivity {
         }
     }
 
-    private void setJuiceNumber(int number){
-        juiceAmount.setText(String.format(Locale.getDefault(),"%d %s", number, getResources().getString(R.string.juice_number)));
+    private void setJuiceNumber (int number) {
+        juiceAmount.setText(String.format(Locale.getDefault(), "%d %s", number, getResources().getString(R.string.juice_number)));
 
     }
 }
