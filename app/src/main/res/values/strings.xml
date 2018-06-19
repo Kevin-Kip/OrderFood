@@ -36,4 +36,10 @@
     <string name="use_google_id">Use Google ID</string>
     <string name="credit_debit_card">Credit/Debit card</string>
     <string name="credit_card">Credit Card</string>
+    <string name="confirm">Confirm</string>
+    <string name="holders_name">Holder\'s name</string>
+    <string name="expiry">Expiry</string>
+    <string name="ccv">CCV</string>
+    <string name="card_number">Card number</string>
+    <string name="_10_00">$10.00</string>
 </resources>

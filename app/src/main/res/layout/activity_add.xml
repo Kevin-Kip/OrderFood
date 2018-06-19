@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/confirmation"
+                android:text="@string/payment"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +152,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$10.00"
+            android:text="@string/_10_00"
             android:id="@+id/price"
             android:textStyle="bold"
             android:textSize="16sp"
@@ -171,8 +171,8 @@
         android:id="@+id/android_pay"
         android:paddingTop="7dp"
         android:paddingBottom="7dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toStartOf="@id/credit_pay"
@@ -184,6 +184,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/logo_android"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/ic_android"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -195,10 +196,11 @@
             android:id="@+id/pay_name"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/logo_android"
+            app:layout_constraintEnd_toEndOf="parent"
             android:padding="5dp"
             android:text="@string/android_pay"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="13sp"
             android:textColor="@android:color/black"/>
         <TextView
             android:layout_width="wrap_content"
@@ -219,8 +221,8 @@
         app:layout_constraintStart_toEndOf="@id/android_pay"
         android:paddingTop="7dp"
         android:paddingBottom="7dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="12dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="7dp"
         android:background="@drawable/button_background"
@@ -243,11 +245,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/card_name"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/logo_credit_card"
             android:padding="5dp"
             android:text="@string/credit_card"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="13sp"
             android:textColor="@android:color/white"/>
         <TextView
             android:layout_width="wrap_content"
@@ -261,5 +264,86 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/card_background_white"
+        android:id="@+id/credit_card_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/credit_pay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/credit_card_name"
+                android:hint="@string/holders_name"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/credit_card_expiry"
+                android:hint="@string/expiry"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/credit_card_number"
+                android:hint="@string/card_number"
+                android:inputType="number" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/credit_card_ccv"
+                android:hint="@string/ccv"
+                android:inputType="number"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_button"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/credit_card_input"
+        app:layout_constraintBottom_toTopOf="@id/confirm_button"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:id="@+id/confirm_button"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"/>
 
 </android.support.constraint.ConstraintLayout>
