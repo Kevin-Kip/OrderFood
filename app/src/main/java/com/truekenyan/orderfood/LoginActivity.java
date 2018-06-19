@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 break;
             case R.id.login_button:
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));//TODO validate
+                finish();
                 break;
         }
     }
