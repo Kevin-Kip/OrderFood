@@ -6,7 +6,7 @@ Android app UI design.
 Largely used `ConstarintLayout`
 
 ## Look and feel
-![screenshot1](screenshots/screenshot1.png)
+![screenshot1](screenshots/screenshot1.png | width=100)
 
 ![screenshot2](screenshots/screenshot2.png)
 
